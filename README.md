@@ -21,6 +21,12 @@ This repository is a python implementation of the SimplePIR protocol based on th
 
 The only dependency for this library is *Numpy*.
 
+## Properties
+
+* Single-server
+* The communication size is $O(1/\sqrt N)$.
+* The computation cost is low.
+
 ## Example Usage
 
 ```python
