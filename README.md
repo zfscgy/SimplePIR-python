@@ -49,9 +49,9 @@ r = pir_client.recover(index, ans)
 print(f"Expected {database[index]}, get {r}")
 ```
 
-Notice that, in this implementation, each database entry is only a small integer whose upper bound can be computed via the database size, in order to meet security&correctness standards, using the bound computed in *Theorem C.1* in the paper.
+In this implementation, each database entry is only a small integer whose upper bound can be computed via the database size, in order to meet security&correctness standards, using *Theorem C.1* in the paper.
 
-If your database contain larger records, you can split one record into multiple "small integers". Also, there are several optimization methods in the original paper which may be helpful.
+If your database contains larger records, you can split one record into multiple "small integers". Also, there are several optimization methods in the original paper which may be helpful.
 
 ## Security Notice
 
@@ -62,5 +62,5 @@ If your database contain larger records, you can split one record into multiple 
 ## Related Resources
 
 1. The original implementation in Go: [github.com/ahenzinger/simplepir](https://github.com/ahenzinger/simplepir/tree/main)
-2. An estimator used to estimate the LWE hardness, which is used to compute the parameters in the original paper: [github.com/malb/lattice-estimator: An attempt at a new LWE estimator (github.com)](https://github.com/malb/lattice-estimator/)
+2. An estimator of the LWE problem hardness, which is used to compute the parameters in the original paper: [github.com/malb/lattice-estimator: An attempt at a new LWE estimator (github.com)](https://github.com/malb/lattice-estimator/)
 
