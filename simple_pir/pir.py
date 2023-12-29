@@ -3,8 +3,8 @@ from typing import List, Collection
 import numpy as np
 np.seterr(over='ignore')
 
-from params import Params
-from discrete_gaussian import default_sampler
+from simple_pir.params import Params
+from simple_pir.discrete_gaussian import default_sampler
 
 
 class PIRServer:
